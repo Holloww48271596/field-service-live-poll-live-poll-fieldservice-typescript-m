@@ -1,0 +1,17 @@
+{
+  "name": "field-service-live-poll",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "session": "node src/run_session.ts",
+    "test": "node src/field_service_session.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "zod": "^3.23.0"
+  }
+}

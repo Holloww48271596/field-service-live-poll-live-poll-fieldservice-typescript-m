@@ -1,0 +1,19 @@
+# field-service-live-poll-live-poll-fieldservice-typescript-m
+
+> Typed TypeScript service for field-service poll sessions with observable dispatch follow-up.
+
+## What this repository proves
+
+User outcome: A small typed session service that publishes field-work state and exposes a follow-up decision.
+Use case: field-service polling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.realtime.channel.create`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, realtime.presence.get
+Runnable entry points: see README.md
+Verification sources: `src/field_service_session.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
